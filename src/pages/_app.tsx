@@ -7,8 +7,10 @@ import {
     CssBaseline,
     colors,
     Toolbar,
-    AppBar
+    AppBar,
+    Grid
 } from '@material-ui/core'
+import MenuCaller from '../components/Menu/MenuCaller'
 
 const theme = createMuiTheme({
     palette: {
@@ -31,26 +33,34 @@ const theme = createMuiTheme({
 })
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-    return (<>
-        <Head>
-            <title>Game Assets Generator</title>
-            <meta
-                name="viewport"
-                content="minimum-scale=1, initial-scale=1, width=device-width"
-            />
-        </Head>
-        <MuiThemeProvider theme={theme}>
-            <CssBaseline />
-            <Component {...pageProps} />
-            <footer>
-                <AppBar position="fixed" color="secondary" style={{ top: 'auto', bottom: 0 }}>
-                    <Toolbar variant="dense">
-
-                    </Toolbar>
-                </AppBar>
-            </footer>
-        </MuiThemeProvider>
-    </>)
+    return (
+        <>
+            <Head>
+                <title>Game Assets Generator</title>
+                <meta
+                    name="viewport"
+                    content="minimum-scale=1, initial-scale=1, width=device-width"
+                />
+            </Head>
+            <MuiThemeProvider theme={theme}>
+                <CssBaseline />
+                <Component {...pageProps} />
+                <footer>
+                    <AppBar
+                        position="fixed"
+                        color="secondary"
+                        style={{ top: 'auto', bottom: 0 }}
+                    >
+                        <Toolbar variant="dense">
+                            <Grid container justify="center" spacing={2}>
+                                <MenuCaller />
+                            </Grid>
+                        </Toolbar>
+                    </AppBar>
+                </footer>
+            </MuiThemeProvider>
+        </>
+    )
 }
 
 export default MyApp
