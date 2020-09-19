@@ -1,10 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {
-    Container,
-    Grid,
-    Button
-} from '@material-ui/core'
+import { Container, Grid, Button } from '@material-ui/core'
 import domtoimage from 'dom-to-image'
 
 export const Home: React.FC = () => {
@@ -23,19 +19,31 @@ export const Home: React.FC = () => {
     return (
         <>
             <Container maxWidth="lg">
-                <Grid container justify="space-between" spacing={2} >
+                <Grid container justify="space-between" spacing={2}>
                     <Grid item xs={12}>
                         <Link href="/" shallow={true}>
-                            <Button variant="contained" color="primary" onClick={test}>Test</Button>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                onClick={test}
+                            >
+                                Test
+                            </Button>
                         </Link>
                     </Grid>
                     <Grid item xs={12}>
-                        <div ref={actual} >
+                        <div ref={actual}>
                             <span>Meu nome é david</span>
-                            <Button variant="contained" color="primary" onClick={test}>Test</Button>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                onClick={test}
+                            >
+                                Test
+                            </Button>
                         </div>
                     </Grid>
-                    <Grid item xs={12} >
+                    <Grid item xs={12}>
                         <img
                             src={src}
                             alt="nothing for now"
