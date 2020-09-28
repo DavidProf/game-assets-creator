@@ -1,0 +1,40 @@
+{
+    "name": "@game-assets-creator/server",
+    "version": "0.0.0",
+    "description": "Game assets creator for server side",
+    "main": "dist/index",
+    "types": "dist/index",
+    "keywords": [
+        "game",
+        "assets",
+        "creator",
+        "server"
+    ],
+    "author": "David Lima <david.lima50@etec.sp.gov.br>",
+    "homepage": "https://github.com/DavidProf/game-assets-creator/packages/server/README.md",
+    "license": "MIT",
+    "directories": {
+        "dist": "dist",
+        "test": "__tests__"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DavidProf/game-assets-creator.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/DavidProf/game-assets-creator/issues"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.3"
+    }
+}

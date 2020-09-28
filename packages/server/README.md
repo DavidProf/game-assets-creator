@@ -1,3 +1,4 @@
+# @game-assets-creator/server
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -64,67 +65,42 @@ A list of commonly used resources that I find helpful are listed in the [Acknowl
 
 ### Built With
 
-* [ReactJs](https://reactjs.org/)
-* [NextJS](https://nextjs.org/)
-* [Material UI](https://material-ui.com/)
+* [jsdom](https://www.npmjs.com/package/jsdom)
+* [html-to-image](https://www.npmjs.com/package/html-to-image)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Follow this instructions on how to set up your project locally..
-To get a local copy up and running follow these simple steps.
+Follow this instructions on how to set up your project locally.
 
 ### Prerequisites
 
-This is what need to use the software and how to install them (for ubuntu).
-
-* Node
-```sh
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-* yarn
-
-with npm
-```sh
-npm install yarn@latest -g
-```
-or
-```sh
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-```
-```sh
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
-```sh
-sudo apt update && sudo apt install yarn
-```
+* None for now
 
 ### Installation
 
-1. Clone the repo
+1. Install the package
 ```sh
-git clone https://github.com/DavidProf/game-assets-creator.git
-```
-2. Go to the directory
-```sh
-cd game-assets-creator
-```
-3. Install packages
-```sh
-yarn install
+# with npm
+npm i @game-assets-creator/server
+# with yarn
+yarn add @game-assets-creator/server
 ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The project is formed by 3 parts, the client lib, server lib and the web application. To see usage examples, please access one of the follow.
+Get started:
+```js
+// ES6 or typescript
+import GAC from '@game-assets-creator/server'
+// ES5
+const GAC = require('@game-assets-creator/server')
 
-- [Client](https://github.com/DavidProf/packages/client/README.md)
-- [Server](https://github.com/DavidProf/packages/server/README.md)
-- [Web App](https://github.com/DavidProf/web/README.md)
+const character = GAC.create({type:'human'})
 
+const imageBuffer = character.toPNG()
+```
 
 
 <!-- ROADMAP -->
@@ -158,9 +134,8 @@ Project Link: [https://github.com/DavidProf/game-assets-creator](https://github.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Pages](https://pages.github.com)
-* [ReactJS Docs](https://reactjs.org/docs/getting-started.html)
-* [NextJs Docs](https://nextjs.org/docs)
+* [jsdom](https://www.npmjs.com/package/jsdom)
+* [html-to-image](https://www.npmjs.com/package/html-to-image)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
