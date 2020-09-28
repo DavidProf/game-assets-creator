@@ -24,7 +24,7 @@
         "test": "jest --verbose",
         "build": "yarn clean && yarn && yarn client:build && yarn server:build && yarn web:build",
         "build:with-front": "yarn clean && yarn && yarn client:build && yarn server:build:front",
-        "publish": "lerna publish"
+        "l:publish": "lerna publish"
     },
     "workspaces": {
         "packages": [

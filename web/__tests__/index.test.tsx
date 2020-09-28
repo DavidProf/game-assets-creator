@@ -5,10 +5,9 @@ import Index from '../src/pages/index'
 describe('Not implemented yet', () => {
     test('Not implemented', () => {
         const page = render(<Index />)
-        fireEvent.change(
-            page.getByTestId('any').querySelector('textarea'),
-            { target: { value: 'any' } }
-        )
+        fireEvent.change(page.getByTestId('any').querySelector('textarea'), {
+            target: { value: 'any' }
+        })
         expect(page).toBeTruthy()
     })
 })
