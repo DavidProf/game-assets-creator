@@ -1,6 +1,6 @@
 {
     "name": "@game-assets-creator/client",
-    "version": "0.0.0",
+    "version": "0.0.1-alpha.0",
     "description": "Game assets creator for client",
     "main": "dist/index",
     "types": "dist/index",

@@ -1,6 +1,6 @@
 {
     "name": "@game-assets-creator/server",
-    "version": "0.0.0",
+    "version": "0.0.1-alpha.0",
     "description": "Game assets creator for server side",
     "main": "dist/index",
     "types": "dist/index",
